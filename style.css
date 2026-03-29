@@ -1,0 +1,135 @@
+:root{
+    --bgColor:#ffff;
+    --textColor: #000000;       
+    --buttonBg: blue;
+}
+
+[data-theme="dark"] {
+    --bgColor: #222222; 
+    --textColor: #ffffff;       
+}
+.container{
+   width: 50%;
+   
+  
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+
+body{
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.completed-task .task-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.complete-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.complete-btn:hover {
+    background-color: #218838;
+}
+
+
+.filterBtn.active {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-weight: bold;
+}
+
+.filterBtn {
+    background: none;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin: 10px;
+}
+
+#taskList{
+    color: var(--textColor);
+    font-size: large;
+    background-color: rgb(144, 186, 187);
+}
+
+#add{
+    background-color: #58d372;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+}
+
+#taskInput{
+   border: 1px solid #007bff;
+}
+#dateInput{
+    border: 1px solid #007bff;
+}
+
+#togleTheme{
+    background-color:darkslategrey;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+}
